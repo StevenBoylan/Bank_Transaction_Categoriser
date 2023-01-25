@@ -19,7 +19,7 @@ def categoriser(csv_filename):
       ammount = transaction[7]
       temp_transaction = (date, name, ammount)     # save these values as a list
 
-    # The CSV figures come out in the EU format of using a "." as a 1000s seperator.
+    # The CSV figures come out in a mixed format, using a "." as a 1000s seperator and another as a decimal point.
     # This loop checks the "ammount" value and if there are two decimal points, gets rid of the first one
     # numbers are output in the format "1000.00" instead of "1.000.00"
 
