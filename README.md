@@ -1,25 +1,30 @@
 # Bank Transaction Categoriser
-This is a python script that takes a CSV input of monthly banking transactions seperates them into "incomming" and "outgoing" transactions, then categorises each transaciton.  
+This is a python script that takes a CSV input of monthly banking transactions separates them into "incoming" and "outgoing" transactions, then categorises each transaction. I created this script to learn how to import, process and export data in csv format. 
+
+A future extension of this project will be functionalities to sum up transactions, totals and by category. 
 
 ## Description
 
-This is the first script I wrote in Python to tests how the language works. It captures input from the user, then adds these variables to a pre-formatted prompt. Using the OpenAI API it sends this prompt to OpenAPI GPT3 and then prints the output. </br>
-It's as simple as that!
+This script categorises transactions from a csv file. The categoriser function is called from main with the name of the csv file.
+•	categoriser.py has a series of loops that:
+•	read in the data from csv,
+•	get rid of unwanted data columns
+•	tidies up the formats of the amounts
+•	separates transactions into outgoing and incoming categories
+•	then categorises the transaction according to the merchant-name in the transaction
+•	saves this data to a csv file called 'final:banking.csv'
 
-
-
+Although the code gets the job done, there are a few things that could be improved to make it more elegant and efficient.
 
 ### Dependencies
 
-You will need to import the openai library
+The Arrays file contains arrays with the names of merchants and their categories. This was manually created. In this file I have removed all but a couple of examples in each list.  
 
-### Installing
-
-The API key in this repository has been removed - you will need to add your own key to get it to work.
+My raw csv file, ‘banking.csv’, is in the same directory as the code. 
 
 ## Authors
 
-Me
+Steven Boylan
 
 ## Acknowledgments
 
